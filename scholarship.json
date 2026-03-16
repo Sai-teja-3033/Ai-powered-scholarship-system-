@@ -1,0 +1,81 @@
+[
+{
+"name":"Central Sector Scheme of Scholarship",
+"marks":80,
+"income":800000,
+"category":"Any",
+"deadline":"October",
+"description":"For students with high marks in Class 12 pursuing UG courses.",
+"link":"https://scholarships.gov.in"
+},
+
+{
+"name":"National Means-cum-Merit Scholarship (NMMS)",
+"marks":55,
+"income":350000,
+"category":"Any",
+"deadline":"November",
+"description":"For economically weaker students from Class 9-12.",
+"link":"https://scholarships.gov.in"
+},
+
+{
+"name":"AICTE Pragati Scholarship for Girls",
+"marks":60,
+"income":800000,
+"category":"Any",
+"deadline":"September",
+"description":"Scholarship for girls studying technical courses.",
+"link":"https://www.aicte-india.org"
+},
+
+{
+"name":"AICTE Saksham Scholarship",
+"marks":50,
+"income":800000,
+"category":"Any",
+"deadline":"September",
+"description":"Scholarship for differently-abled students in technical education.",
+"link":"https://www.aicte-india.org"
+},
+
+{
+"name":"INSPIRE Scholarship",
+"marks":85,
+"income":1000000,
+"category":"Any",
+"deadline":"October",
+"description":"For students pursuing science degrees.",
+"link":"https://online-inspire.gov.in"
+},
+
+{
+"name":"HDFC Bank Parivartan Scholarship",
+"marks":55,
+"income":250000,
+"category":"Any",
+"deadline":"December",
+"description":"Financial support for school and college students.",
+"link":"https://www.buddy4study.com"
+},
+
+{
+"name":"Reliance Foundation Scholarship",
+"marks":70,
+"income":800000,
+"category":"Any",
+"deadline":"October",
+"description":"Scholarship for undergraduate students across India.",
+"link":"https://www.reliancefoundation.org"
+},
+
+{
+"name":"Tata Capital Pankh Scholarship",
+"marks":60,
+"income":250000,
+"category":"Any",
+"deadline":"September",
+"description":"Scholarship for students from economically weaker families.",
+"link":"https://www.buddy4study.com"
+}
+]
