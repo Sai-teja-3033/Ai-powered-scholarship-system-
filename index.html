@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
 <meta charset="UTF-8">
 <title>AI Scholarship Finder</title>
@@ -9,43 +10,42 @@
 <body>
 
 <header>
-<h1>AI Powered Scholarship System</h1>
-<p>Find scholarships based on your profile</p>
+<h1>🎓 AI Scholarship Finder</h1>
+<p>Find real scholarships you can apply for</p>
 </header>
 
 <div class="container">
 
 <div class="card">
-<h2>Student Profile</h2>
 
-<label>Name</label>
-<input type="text" id="name">
+<h2>Student Details</h2>
 
-<label>Course</label>
-<input type="text" id="course">
+<input id="marks" type="number" placeholder="Marks %">
 
-<label>Marks (%)</label>
-<input type="number" id="marks">
+<input id="income" type="number" placeholder="Family Income">
 
-<label>Family Income (₹)</label>
-<input type="number" id="income">
-
-<label>Category</label>
 <select id="category">
+
 <option>General</option>
 <option>OBC</option>
 <option>SC</option>
 <option>ST</option>
 <option>Minority</option>
+
 </select>
 
-<button onclick="findScholarships()">Find Scholarships</button>
+<button onclick="findScholarships()">
+Find Scholarships
+</button>
 
 </div>
 
 <div class="card">
-<h2>Recommended Scholarships</h2>
+
+<h2>Available Scholarships</h2>
+
 <div id="results"></div>
+
 </div>
 
 </div>
@@ -53,4 +53,5 @@
 <script src="script.js"></script>
 
 </body>
+
 </html>
