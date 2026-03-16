@@ -1,44 +1,54 @@
-let scholarships=[];
+let scholarships = [];
 
 fetch("scholarships.json")
-.then(res=>res.json())
-.then(data=>scholarships=data);
+.then(res => res.json())
+.then(data => scholarships = data);
 
 function findScholarships(){
 
-let marks=document.getElementById("marks").value;
-let income=document.getElementById("income").value;
-let category=document.getElementById("category").value;
+let marks = parseInt(document.getElementById("marks").value);
+let income = parseInt(document.getElementById("income").value);
+let category = document.getElementById("category").value;
 
-let output="";
+let output = "";
 
-scholarships.forEach(s=>{
+scholarships.forEach(s => {
 
-let score=0;
+let eligible = true;
+let score = 0;
 
-if(marks>=s.marks)
-score+=50;
+/* Marks condition */
+if(marks >= s.marks){
+score += 40;
+}else{
+eligible = false;
+}
 
-if(income<=s.income)
-score+=30;
+/* Income condition */
+if(income <= s.income){
+score += 30;
+}
 
-if(category==s.category || s.category=="Any")
-score+=20;
+/* Category condition */
+if(category == s.category || s.category == "Any"){
+score += 30;
+}
 
-if(score>=40){
+/* Show scholarship if basic eligibility satisfied */
+if(eligible){
 
-output+=`
+output += `
 <div class="scholarship">
 
 <b>${s.name}</b><br>
 
 Eligibility: ${s.description}<br>
 
+Match Score: ${score}%<br>
+
 Deadline: ${s.deadline}<br>
 
-<a href="${s.link}" target="_blank">
-Apply Here
-</a>
+<a href="${s.link}" target="_blank">Apply Here</a>
 
 </div>
 `;
@@ -47,9 +57,10 @@ Apply Here
 
 });
 
-if(output=="")
-output="No scholarships matched your profile.";
+if(output === ""){
+output = "No scholarships matched. Try entering higher marks or different category.";
+}
 
-document.getElementById("results").innerHTML=output;
+document.getElementById("results").innerHTML = output;
 
 }
