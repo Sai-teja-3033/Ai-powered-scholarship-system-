@@ -1,66 +1,101 @@
-let scholarships = [];
+async function getRecommendations() {
 
-fetch("scholarships.json")
-.then(res => res.json())
-.then(data => scholarships = data);
+    console.log("Button clicked");
 
-function findScholarships(){
+    const marks = parseFloat(document.getElementById("marks").value);
+    const income = parseFloat(document.getElementById("income").value);
+    const category = document.getElementById("category").value;
+    const field = document.getElementById("field").value;
 
-let marks = parseInt(document.getElementById("marks").value);
-let income = parseInt(document.getElementById("income").value);
-let category = document.getElementById("category").value;
+    // Validation
+    if (isNaN(marks) || isNaN(income)) {
+        alert("Please fill all fields correctly");
+        return;
+    }
 
-let output = "";
+    try {
+        const response = await fetch("scholarships.json");
 
-scholarships.forEach(s => {
+        if (!response.ok) {
+            throw new Error("JSON not found");
+        }
 
-let eligible = true;
-let score = 0;
+        const scholarships = await response.json();
 
-/* Marks condition */
-if(marks >= s.marks){
-score += 40;
-}else{
-eligible = false;
-}
+        let results = [];
 
-/* Income condition */
-if(income <= s.income){
-score += 30;
-}
+        scholarships.forEach(s => {
 
-/* Category condition */
-if(category == s.category || s.category == "Any"){
-score += 30;
-}
+            let score = 0;
+            let reasons = [];
 
-/* Show scholarship if basic eligibility satisfied */
-if(eligible){
+            // Marks check
+            if (marks >= s.min_marks) {
+                score += 2;
+                reasons.push("✔ Marks eligible");
+            } else {
+                reasons.push("❌ Marks below requirement");
+            }
 
-output += `
-<div class="scholarship">
+            // Income check
+            if (income <= s.max_income) {
+                score += 2;
+                reasons.push("✔ Income within limit");
+            } else {
+                reasons.push("❌ Income exceeds limit");
+            }
 
-<b>${s.name}</b><br>
+            // Category check
+            if (s.category === "Any" || s.category === category) {
+                score += 1;
+                reasons.push("✔ Category match");
+            } else {
+                reasons.push("❌ Category mismatch");
+            }
 
-Eligibility: ${s.description}<br>
+            // Field check
+            if (s.field === "Any" || s.field === field) {
+                score += 1;
+                reasons.push("✔ Field match");
+            } else {
+                reasons.push("❌ Field mismatch");
+            }
 
-Match Score: ${score}%<br>
+            // Only include relevant results
+            if (score >= 3) {
+                results.push({ ...s, score, reasons });
+            }
+        });
 
-Deadline: ${s.deadline}<br>
+        // Sort by highest score
+        results.sort((a, b) => b.score - a.score);
 
-<a href="${s.link}" target="_blank">Apply Here</a>
+        // Display results
+        let html = "<h2>Recommended Scholarships</h2>";
 
-</div>
-`;
+        if (results.length === 0) {
+            html += "<p>No scholarships found 😢</p>";
+        } else {
+            results.forEach(s => {
+                html += `
+                    <div class="card">
+                        <h3>${s.name}</h3>
+                        <p><strong>Score:</strong> ${s.score}/6</p>
 
-}
+                        <ul style="text-align:left;">
+                            ${s.reasons.map(r => `<li>${r}</li>`).join("")}
+                        </ul>
 
-});
+                        <a href="${s.link}" target="_blank">Apply Now</a>
+                    </div>
+                `;
+            });
+        }
 
-if(output === ""){
-output = "No scholarships matched. Try entering higher marks or different category.";
-}
+        document.getElementById("results").innerHTML = html;
 
-document.getElementById("results").innerHTML = output;
-
+    } catch (error) {
+        console.error("ERROR:", error);
+        alert("Error loading scholarships.json");
+    }
 }
