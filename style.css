@@ -1,31 +1,126 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
 body {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #ffffff);
     text-align: center;
-    background: #f0f2f5;
+    padding: 20px;
 }
 
+/* Title */
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form container */
 .form {
-    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
+/* Inputs */
 input, select {
-    padding: 10px;
-    margin: 10px;
-    width: 200px;
+    padding: 12px;
+    width: 220px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
 }
 
+/* Button */
 button {
-    padding: 10px 20px;
-    background: blue;
+    padding: 12px 20px;
+    background: #007BFF;
     color: white;
     border: none;
+    border-radius: 8px;
     cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
 }
 
+button:hover {
+    background: #0056b3;
+}
+
+/* Results container */
+#results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Cards */
 .card {
     background: white;
-    padding: 15px;
-    margin: 10px auto;
+    padding: 20px;
     width: 300px;
-    border-radius: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Card text */
+.card h3 {
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
+/* List */
+.card ul {
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+/* Apply button */
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    background: #28a745;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.card a:hover {
+    background: #1e7e34;
+}
+
+/* 📱 MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+
+    input, select {
+        width: 100%;
+    }
+
+    .form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
 }
