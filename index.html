@@ -1,57 +1,37 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-<meta charset="UTF-8">
-<title>AI Scholarship Finder</title>
-<link rel="stylesheet" href="style.css">
+    <title>AI Scholarship Finder</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
 <h1>🎓 AI Scholarship Finder</h1>
-<p>Find real scholarships you can apply for</p>
-</header>
 
-<div class="container">
+<div class="form">
+    <input type="number" id="marks" placeholder="Marks (%)">
+    <input type="number" id="income" placeholder="Family Income">
 
-<div class="card">
+    <select id="category">
+        <option value="General">General</option>
+        <option value="OBC">OBC</option>
+        <option value="SC">SC</option>
+        <option value="ST">ST</option>
+    </select>
 
-<h2>Student Details</h2>
+    <select id="field">
+        <option value="Engineering">Engineering</option>
+        <option value="Medical">Medical</option>
+        <option value="Science">Science</option>
+        <option value="Arts">Arts</option>
+    </select>
 
-<input id="marks" type="number" placeholder="Marks %">
-
-<input id="income" type="number" placeholder="Family Income">
-
-<select id="category">
-
-<option>General</option>
-<option>OBC</option>
-<option>SC</option>
-<option>ST</option>
-<option>Minority</option>
-
-</select>
-
-<button onclick="findScholarships()">
-Find Scholarships
-</button>
-
+    <button onclick="getRecommendations()">Find Scholarships</button>
 </div>
-
-<div class="card">
-
-<h2>Available Scholarships</h2>
 
 <div id="results"></div>
-
-</div>
-
-</div>
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
