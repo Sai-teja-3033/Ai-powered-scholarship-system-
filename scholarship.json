@@ -1,81 +1,55 @@
 [
-{
-"name":"Central Sector Scheme of Scholarship",
-"marks":80,
-"income":800000,
-"category":"Any",
-"deadline":"October",
-"description":"For students with high marks in Class 12 pursuing UG courses.",
-"link":"https://scholarships.gov.in"
-},
+  {"name":"NMMS Scholarship","min_marks":55,"max_income":350000,"category":"Any","field":"Any","link":"https://scholarships.gov.in"},
+  {"name":"Central Sector Scholarship","min_marks":80,"max_income":800000,"category":"Any","field":"Any","link":"https://scholarships.gov.in"},
+  {"name":"INSPIRE Scholarship","min_marks":85,"max_income":1000000,"category":"Any","field":"Science","link":"https://online-inspire.gov.in"},
+  {"name":"AICTE Pragati Scholarship","min_marks":60,"max_income":800000,"category":"Any","field":"Engineering","link":"https://aicte-india.org"},
+  {"name":"AICTE Saksham Scholarship","min_marks":60,"max_income":800000,"category":"Any","field":"Engineering","link":"https://aicte-india.org"},
+  {"name":"Post Matric Scholarship SC","min_marks":50,"max_income":250000,"category":"SC","field":"Any","link":"https://scholarships.gov.in"},
+  {"name":"Post Matric Scholarship ST","min_marks":50,"max_income":250000,"category":"ST","field":"Any","link":"https://scholarships.gov.in"},
+  {"name":"Pre Matric Minority Scholarship","min_marks":50,"max_income":100000,"category":"OBC","field":"Any","link":"https://scholarships.gov.in"},
+  {"name":"Merit Cum Means Minority Scholarship","min_marks":60,"max_income":250000,"category":"OBC","field":"Any","link":"https://scholarships.gov.in"},
+  {"name":"Top Class Education SC Scholarship","min_marks":65,"max_income":800000,"category":"SC","field":"Any","link":"https://scholarships.gov.in"},
+  {"name":"Top Class Education ST Scholarship","min_marks":65,"max_income":800000,"category":"ST","field":"Any","link":"https://scholarships.gov.in"},
+  {"name":"National Fellowship ST","min_marks":70,"max_income":800000,"category":"ST","field":"Any","link":"https://scholarships.gov.in"},
+  {"name":"National Fellowship SC","min_marks":70,"max_income":800000,"category":"SC","field":"Any","link":"https://scholarships.gov.in"},
+  {"name":"UGC PG Scholarship","min_marks":70,"max_income":800000,"category":"Any","field":"Any","link":"https://ugc.ac.in"},
+  {"name":"UGC NET JRF Scholarship","min_marks":75,"max_income":800000,"category":"Any","field":"Any","link":"https://ugc.ac.in"},
 
-{
-"name":"National Means-cum-Merit Scholarship (NMMS)",
-"marks":55,
-"income":350000,
-"category":"Any",
-"deadline":"November",
-"description":"For economically weaker students from Class 9-12.",
-"link":"https://scholarships.gov.in"
-},
+  {"name":"Reliance Foundation Scholarship","min_marks":75,"max_income":800000,"category":"Any","field":"Engineering","link":"https://scholarships.reliancefoundation.org"},
+  {"name":"Tata Capital Pankh Scholarship","min_marks":60,"max_income":250000,"category":"Any","field":"Any","link":"https://buddy4study.com"},
+  {"name":"HDFC Parivartan Scholarship","min_marks":55,"max_income":250000,"category":"Any","field":"Any","link":"https://buddy4study.com"},
+  {"name":"Sitaram Jindal Scholarship","min_marks":65,"max_income":400000,"category":"Any","field":"Any","link":"https://sitaramjindalfoundation.org"},
+  {"name":"Infosys STEM Stars Scholarship","min_marks":70,"max_income":800000,"category":"Any","field":"Engineering","link":"https://infosys.org"},
+  {"name":"Aditya Birla Scholarship","min_marks":85,"max_income":1000000,"category":"Any","field":"Any","link":"https://adityabirla.com"},
+  {"name":"ONGC Scholarship","min_marks":60,"max_income":200000,"category":"Any","field":"Engineering","link":"https://ongcindia.com"},
+  {"name":"LIC Golden Jubilee Scholarship","min_marks":60,"max_income":450000,"category":"Any","field":"Any","link":"https://licindia.in"},
+  {"name":"Kotak Scholarship","min_marks":65,"max_income":350000,"category":"Any","field":"Any","link":"https://kotak.com"},
+  {"name":"L&T Build India Scholarship","min_marks":70,"max_income":800000,"category":"Any","field":"Engineering","link":"https://larsentoubro.com"},
 
-{
-"name":"AICTE Pragati Scholarship for Girls",
-"marks":60,
-"income":800000,
-"category":"Any",
-"deadline":"September",
-"description":"Scholarship for girls studying technical courses.",
-"link":"https://www.aicte-india.org"
-},
+  {"name":"Google Generation Scholarship","min_marks":80,"max_income":1000000,"category":"Any","field":"Engineering","link":"https://buildyourfuture.withgoogle.com"},
+  {"name":"Microsoft Scholarship","min_marks":80,"max_income":1000000,"category":"Any","field":"Engineering","link":"https://microsoft.com"},
+  {"name":"Amazon Future Engineer Scholarship","min_marks":75,"max_income":800000,"category":"Any","field":"Engineering","link":"https://amazon.com"},
+  {"name":"Adobe India Scholarship","min_marks":75,"max_income":800000,"category":"Any","field":"Engineering","link":"https://adobe.com"},
 
-{
-"name":"AICTE Saksham Scholarship",
-"marks":50,
-"income":800000,
-"category":"Any",
-"deadline":"September",
-"description":"Scholarship for differently-abled students in technical education.",
-"link":"https://www.aicte-india.org"
-},
+  {"name":"PM Scholarship Scheme","min_marks":60,"max_income":800000,"category":"Any","field":"Any","link":"https://ksb.gov.in"},
+  {"name":"PM Yashasvi Scholarship","min_marks":60,"max_income":250000,"category":"OBC","field":"Any","link":"https://nta.ac.in"},
+  {"name":"PM CARES Scholarship","min_marks":50,"max_income":800000,"category":"Any","field":"Any","link":"https://pmcares.gov.in"},
 
-{
-"name":"INSPIRE Scholarship",
-"marks":85,
-"income":1000000,
-"category":"Any",
-"deadline":"October",
-"description":"For students pursuing science degrees.",
-"link":"https://online-inspire.gov.in"
-},
+  {"name":"State Scholarship Andhra Pradesh","min_marks":50,"max_income":200000,"category":"Any","field":"Any","link":"https://jagananna.gov.in"},
+  {"name":"Telangana ePass Scholarship","min_marks":50,"max_income":200000,"category":"Any","field":"Any","link":"https://telanganaepass.cgg.gov.in"},
+  {"name":"Karnataka SSP Scholarship","min_marks":50,"max_income":200000,"category":"Any","field":"Any","link":"https://ssp.postmatric.karnataka.gov.in"},
+  {"name":"Tamil Nadu Scholarship","min_marks":50,"max_income":200000,"category":"Any","field":"Any","link":"https://tn.gov.in"},
+  {"name":"Maharashtra DBT Scholarship","min_marks":50,"max_income":200000,"category":"Any","field":"Any","link":"https://mahadbt.gov.in"},
 
-{
-"name":"HDFC Bank Parivartan Scholarship",
-"marks":55,
-"income":250000,
-"category":"Any",
-"deadline":"December",
-"description":"Financial support for school and college students.",
-"link":"https://www.buddy4study.com"
-},
+  {"name":"Foundation for Excellence Scholarship","min_marks":70,"max_income":300000,"category":"Any","field":"Engineering","link":"https://ffe.org"},
+  {"name":"Narotam Sekhsaria Scholarship","min_marks":75,"max_income":800000,"category":"Any","field":"Any","link":"https://nsfoundation.co.in"},
+  {"name":"JN Tata Endowment Scholarship","min_marks":75,"max_income":800000,"category":"Any","field":"Any","link":"https://jntataendowment.org"},
+  {"name":"Inlaks Scholarship","min_marks":80,"max_income":1000000,"category":"Any","field":"Any","link":"https://inlaksfoundation.org"},
 
-{
-"name":"Reliance Foundation Scholarship",
-"marks":70,
-"income":800000,
-"category":"Any",
-"deadline":"October",
-"description":"Scholarship for undergraduate students across India.",
-"link":"https://www.reliancefoundation.org"
-},
+  {"name":"Fair and Lovely Scholarship","min_marks":60,"max_income":500000,"category":"Any","field":"Any","link":"https://scholarships.gov.in"},
+  {"name":"Glow and Lovely Career Scholarship","min_marks":60,"max_income":500000,"category":"Any","field":"Any","link":"https://glowandlovelycareers.in"},
 
-{
-"name":"Tata Capital Pankh Scholarship",
-"marks":60,
-"income":250000,
-"category":"Any",
-"deadline":"September",
-"description":"Scholarship for students from economically weaker families.",
-"link":"https://www.buddy4study.com"
-}
+  {"name":"Vidyasaarathi Scholarship","min_marks":60,"max_income":400000,"category":"Any","field":"Any","link":"https://vidyasaarathi.co.in"},
+  {"name":"Colgate Scholarship","min_marks":65,"max_income":400000,"category":"Any","field":"Any","link":"https://colgate.com"},
+  {"name":"Keep India Smiling Scholarship","min_marks":65,"max_income":400000,"category":"Any","field":"Any","link":"https://colgate.com"}
 ]
